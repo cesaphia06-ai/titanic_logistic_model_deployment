@@ -4,11 +4,11 @@ import pandas as pd
 import joblib
 
 # Load the trained model
-model = joblib.load('titanic_model.pkl')
+model = joblib.load('logistic_regression_model.pkl')
 
 #loading scaler
 scaler = joblib.load('scaler.pkl')
-encoder = joblib.load(' label_encoder_sex.pkl')
+encoder = joblib.load('label_encoder_sex.pkl')
 
 #giving title to the app
 st.title('Titanic Survival Prediction')
